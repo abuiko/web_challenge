@@ -17,12 +17,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.3;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 2.3125rem;
     color: $darkBlue;
     font-weight: 300;
+
+    @include breakpoint-up(large) {
+        font-size: 3.625rem;
+    }
 }
 
 li {

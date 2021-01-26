@@ -1,6 +1,7 @@
 .header {
     padding: 1.1875rem;
 
+
     &__link {
         a {
             color: $grayishBlue;
@@ -11,8 +12,6 @@
         }
 
     }
-
-    &__button {}
 
     &__toggle {
         cursor: pointer;
