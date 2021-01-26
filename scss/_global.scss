@@ -33,6 +33,10 @@ h1 {
 h2 {
     font-size: 2rem;
     color: $darkBlue;
+
+    @include breakpoint-up(large) {
+        font-size: 2.375rem;
+    }
 }
 
 h3 {
@@ -41,7 +45,11 @@ h3 {
 }
 
 p {
-    font-size: 0.9375rem;
+    font-size: 1rem;
+
+    @include breakpoint-up(large) {
+        font-size: 1.1rem;
+    }
 
 }
 
@@ -99,6 +107,10 @@ a {
 }
 
 .gray {
+    background-color: $lightGrayishBlue;
+}
+
+.lightgray {
     background-color: $veryLightGray;
 }
 

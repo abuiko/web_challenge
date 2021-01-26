@@ -1,0 +1,44 @@
+.articles {
+    padding: 5.5625rem 1.875rem 4.875rem;
+
+    &__head {
+        h2 {
+            margin-top: 0;
+            margin-bottom: 2.125rem;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+    &__grid {}
+
+    &__card {
+        background: $white;
+
+        .head {
+            width: 18.75rem;
+            height: 11.6875rem;
+            background-image: url('../images/image-currency.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .text {
+            padding: 1.75rem 1.8125rem 2.6875rem;
+
+            p:first-child {
+                font-size: 13px;
+            }
+
+            h3 {
+                font-weight: 700;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+}

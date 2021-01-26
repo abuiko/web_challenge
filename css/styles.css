@@ -39,13 +39,25 @@ h2 {
   color: #2d314d;
 }
 
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.375rem;
+  }
+}
+
 h3 {
   font-weight: 400;
   color: #2d314d;
 }
 
 p {
-  font-size: 0.9375rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 64em) {
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 li {
@@ -105,6 +117,10 @@ a {
 }
 
 .gray {
+  background-color: #f3f4f6;
+}
+
+.lightgray {
   background-color: #fafafa;
 }
 
@@ -262,7 +278,6 @@ a {
 
 .hero__text p {
   text-align: justify;
-  font-size: 1rem;
   color: #9698a6;
   line-height: 1.5;
   margin-bottom: 32px;
@@ -285,8 +300,8 @@ a {
 
 @media (min-width: 64em) {
   .features {
-    padding-top: 5.3125rem;
-    padding-bottom: 5.3125rem;
+    padding-top: 6.75rem;
+    padding-bottom: 6.375rem;
   }
 }
 
@@ -380,8 +395,49 @@ a {
 
 @media (min-width: 64em) {
   .features__card p {
-    width: 75%;
+    width: 90%;
     margin: 0;
+    line-height: 1.5;
   }
+}
+
+.articles {
+  padding: 5.5625rem 1.875rem 4.875rem;
+}
+
+.articles__head h2 {
+  margin-top: 0;
+  margin-bottom: 2.125rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.articles__card {
+  background: white;
+}
+
+.articles__card .head {
+  width: 18.75rem;
+  height: 11.6875rem;
+  background-image: url("../images/image-currency.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.articles__card .text {
+  padding: 1.75rem 1.8125rem 2.6875rem;
+}
+
+.articles__card .text p:first-child {
+  font-size: 13px;
+}
+
+.articles__card .text h3 {
+  font-weight: 700;
+}
+
+.articles__card .text p {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=styles.css.map */

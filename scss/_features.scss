@@ -2,8 +2,8 @@
     padding: 3.6875rem 1.5rem;
 
     @include breakpoint-up(large) {
-        padding-top: 5.3125rem;
-        padding-bottom: 5.3125rem;
+        padding-top: 6.75rem;
+        padding-bottom: 6.375rem;
     }
 
     &__head {
@@ -42,6 +42,7 @@
                 margin: 0;
                 width: 45%;
                 padding-bottom: 0;
+
             }
 
 
@@ -53,8 +54,6 @@
         @include breakpoint-up(large) {
             display: flex;
             margin-top: 2.125rem;
-
-
         }
     }
 
@@ -66,14 +65,11 @@
         &:not(:last-child) {
             @include breakpoint-up(large) {
                 margin-right: 0.5625rem;
-
             }
         }
 
         @include breakpoint-up(large) {
             text-align: left;
-
-
 
         }
 
@@ -90,8 +86,9 @@
             }
 
             @include breakpoint-up(large) {
-                width: 75%;
+                width: 90%;
                 margin: 0;
+                line-height: 1.5;
             }
         }
 
