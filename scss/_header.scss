@@ -1,0 +1,30 @@
+.header {
+    padding: 1.1875rem;
+
+    &__link {
+        a {
+            color: $grayishBlue;
+        }
+
+        &:not(:last-child) {
+            margin-right: 2.0625rem;
+        }
+
+    }
+
+    &__button {}
+
+    &__toggle {
+        cursor: pointer;
+
+        div {
+            width: 1.8125rem;
+            height: 0.125rem;
+            background: $darkBlue;
+
+            &:not(:last-child) {
+                margin-bottom: 0.25rem;
+            }
+        }
+    }
+}
