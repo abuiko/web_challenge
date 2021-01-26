@@ -34,6 +34,20 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 2rem;
+  color: #2d314d;
+}
+
+h3 {
+  font-weight: 400;
+  color: #2d314d;
+}
+
+p {
+  font-size: 0.9375rem;
+}
+
 li {
   list-style: none;
 }
@@ -88,6 +102,10 @@ a {
 .container {
   max-width: 90rem;
   margin: auto;
+}
+
+.gray {
+  background-color: #fafafa;
 }
 
 @media (max-width: 63.9375em) {
@@ -257,6 +275,112 @@ a {
 
 @media (min-width: 64em) {
   .hero__button {
+    margin: 0;
+  }
+}
+
+.features {
+  padding: 3.6875rem 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .features {
+    padding-top: 5.3125rem;
+    padding-bottom: 5.3125rem;
+  }
+}
+
+.features__head {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .features__head {
+    text-align: left;
+  }
+}
+
+.features__head h2 {
+  width: 90%;
+  margin: auto;
+  font-weight: 400;
+}
+
+@media (min-width: 64em) {
+  .features__head h2 {
+    margin: 0;
+  }
+}
+
+.features__head p {
+  color: #9698a6;
+  margin-bottom: 28px;
+  margin-top: 1.3rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media (min-width: 40em) {
+  .features__head p {
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__head p {
+    text-align: left;
+    margin: 0;
+    width: 45%;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2.125rem;
+  }
+}
+
+.features__card {
+  text-align: center;
+  margin-top: 34px;
+}
+
+@media (min-width: 64em) {
+  .features__card:not(:last-child) {
+    margin-right: 0.5625rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__card {
+    text-align: left;
+  }
+}
+
+.features__card h3 {
+  color: #2d314d;
+}
+
+.features__card p {
+  color: #9698a6;
+}
+
+@media (min-width: 40em) {
+  .features__card p {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 64em) {
+  .features__card p {
+    width: 75%;
     margin: 0;
   }
 }
