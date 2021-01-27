@@ -69,7 +69,8 @@ a {
 }
 
 .header__button,
-.hero__button {
+.hero__button,
+button {
   padding: 1.0625rem 2.0625rem;
   border-radius: 60px;
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -77,7 +78,8 @@ a {
 }
 
 .header__button a,
-.hero__button a {
+.hero__button a,
+button a {
   color: white;
   font-weight: 700;
 }
@@ -122,6 +124,10 @@ a {
 
 .lightgray {
   background-color: #fafafa;
+}
+
+.darkBlue {
+  background-color: #2d314d;
 }
 
 @media (max-width: 63.9375em) {
@@ -435,7 +441,6 @@ a {
 .articles__card {
   background: white;
   width: 18.75rem;
-  border: 1px solid magenta;
   margin: 2rem auto;
 }
 
@@ -488,5 +493,69 @@ a {
 
 .articles__card .text p {
   line-height: 1.5;
+}
+
+.footer {
+  text-align: center;
+  padding: 2.1875rem 4.3125rem;
+}
+
+.footer__logos {
+  margin-bottom: 2.125rem;
+}
+
+.footer__logos img {
+  margin-bottom: 1.75rem;
+}
+
+.footer__logos span {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.footer__logos span:not(:last-child) {
+  margin-right: 0.875rem;
+}
+
+.footer__links1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links1 a {
+  color: white;
+  margin-bottom: 1.25rem;
+}
+
+.footer__links2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__links2 a {
+  color: white;
+  margin-bottom: 1.25rem;
+}
+
+.footer__button button {
+  border: none;
+  margin-bottom: 1.5625rem;
+  margin-top: 1.5625rem;
+}
+
+.footer__button p {
+  margin-bottom: 0;
+  color: #f3f4f6;
+  font-size: 0.875rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -64,7 +64,8 @@ a {
 // buttons
 
 .header__button,
-.hero__button {
+.hero__button,
+button {
     padding: 1.0625rem 2.0625rem;
     border-radius: 60px;
     background-image: linear-gradient(to right, $limeGreen, $brightCyan);
@@ -112,6 +113,10 @@ a {
 
 .lightgray {
     background-color: $veryLightGray;
+}
+
+.darkBlue {
+    background-color: $darkBlue;
 }
 
 // visibility
