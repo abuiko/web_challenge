@@ -1,5 +1,50 @@
+.overlay {
+    opacity: 0;
+    position: fixed;
+    top: 3.8rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, $darkBlue, transparent);
+    z-index: 98;
+    pointer-events: none;
+}
+
+.hidden-menu {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 99;
+    width: 90%;
+    padding: 2rem 7.5rem;
+    background: $white;
+    border-radius: 0.625rem;
+    visibility: hidden;
+
+    a {
+        color: $darkBlue;
+
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+}
+
+.hidden-menu.open {
+    visibility: visible;
+}
+
+
 .header {
     padding: 1.1875rem;
+
+
 
 
     &__link {
@@ -26,4 +71,25 @@
             }
         }
     }
+
+    &__toggle.active {
+        div {
+            &:nth-child(1) {
+                transform: rotate(45deg);
+                transform-origin: 5px 2px;
+            }
+
+            &:nth-child(2) {
+                visibility: hidden;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 5px 2px;
+            }
+        }
+    }
+
+
+
 }
