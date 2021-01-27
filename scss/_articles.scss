@@ -7,26 +7,65 @@
             margin-bottom: 2.125rem;
             font-weight: 400;
             text-align: center;
+
+            @include breakpoint-up(large) {
+                font-size: 2.5625rem;
+                text-align: left;
+            }
         }
     }
 
-    &__grid {}
+    &__grid {
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
 
     &__card {
         background: $white;
+        width: 18.75rem;
+        border: 1px solid magenta;
+        margin: 2rem auto;
+
+        @include breakpoint-up(medium) {
+            width: 25rem;
+        }
+
+        @include breakpoint-up(large) {
+            width: 20.875rem;
+        }
+
+
 
         .head {
-            width: 18.75rem;
-            height: 11.6875rem;
-            background-image: url('../images/image-currency.jpg');
+
+            height: 15.625rem;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
 
+        .image1 {
+            background-image: url('../images/image-currency.jpg');
+        }
+
+        .image2 {
+            background-image: url('../images/image-confetti.jpg');
+        }
+
+        .image3 {
+            background-image: url('../images/image-plane.jpg');
+        }
+
+        .image4 {
+            background-image: url('../images/image-restaurant.jpg');
         }
 
         .text {
-            padding: 1.75rem 1.8125rem 2.6875rem;
+            padding: 1.75rem 1.8125rem 1.6875rem;
 
             p:first-child {
                 font-size: 13px;

@@ -412,21 +412,70 @@ a {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .articles__head h2 {
+    font-size: 2.5625rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 40em) {
+  .articles__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .articles__card {
   background: white;
+  width: 18.75rem;
+  border: 1px solid magenta;
+  margin: 2rem auto;
+}
+
+@media (min-width: 40em) {
+  .articles__card {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .articles__card {
+    width: 20.875rem;
+  }
 }
 
 .articles__card .head {
-  width: 18.75rem;
-  height: 11.6875rem;
-  background-image: url("../images/image-currency.jpg");
+  height: 15.625rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.articles__card .image1 {
+  background-image: url("../images/image-currency.jpg");
+}
+
+.articles__card .image2 {
+  background-image: url("../images/image-confetti.jpg");
+}
+
+.articles__card .image3 {
+  background-image: url("../images/image-plane.jpg");
+}
+
+.articles__card .image4 {
+  background-image: url("../images/image-restaurant.jpg");
+}
+
 .articles__card .text {
-  padding: 1.75rem 1.8125rem 2.6875rem;
+  padding: 1.75rem 1.8125rem 1.6875rem;
 }
 
 .articles__card .text p:first-child {
