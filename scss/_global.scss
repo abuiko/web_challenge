@@ -61,6 +61,24 @@ a {
     text-decoration: none;
 }
 
+.hide-for-mobile {
+    display: block;
+
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    display: none;
+
+    @include breakpoint-down(medium) {
+        display: block;
+    }
+}
+
+
+
 // buttons
 
 .header__button,

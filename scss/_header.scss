@@ -1,19 +1,21 @@
 .overlay {
     opacity: 0;
     position: fixed;
-    top: 3.8rem;
+    top: 80px;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, $darkBlue, transparent);
-    z-index: 98;
     pointer-events: none;
+    z-index: 98;
 }
+
+
 
 .hidden-menu {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -25,6 +27,8 @@
     background: $white;
     border-radius: 0.625rem;
     visibility: hidden;
+
+
 
     a {
         color: $darkBlue;
@@ -38,6 +42,7 @@
 
 .hidden-menu.open {
     visibility: visible;
+
 }
 
 
@@ -45,21 +50,43 @@
     padding: 1.1875rem;
 
 
+    @include breakpoint-down(medium) {
+        padding: 2rem;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint-down(medium) {
+            display: none;
+        }
+    }
 
 
     &__link {
         a {
             color: $grayishBlue;
+
+            &:hover {
+                color: #636363;
+            }
         }
 
         &:not(:last-child) {
             margin-right: 2.0625rem;
         }
 
+
+
+
+
     }
 
     &__toggle {
         cursor: pointer;
+
+
 
         div {
             width: 1.8125rem;
@@ -70,13 +97,17 @@
                 margin-bottom: 0.25rem;
             }
         }
+
+
     }
 
     &__toggle.active {
+
+
         div {
             &:nth-child(1) {
                 transform: rotate(45deg);
-                transform-origin: 5px 2px;
+                transform-origin: 7px 3px;
             }
 
             &:nth-child(2) {
@@ -88,6 +119,8 @@
                 transform-origin: 5px 2px;
             }
         }
+
+
     }
 
 
